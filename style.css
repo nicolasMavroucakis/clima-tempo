@@ -2,7 +2,7 @@
 
 *{
     margin: 0;
-    font-family: "Poopins",sans-serif;
+    font-family: "Poppins",sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
@@ -124,7 +124,7 @@ body{
     font-size: 24px;
     margin-left: 4px;
 }
-.weather-box .discription{
+.weather-box .description{
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -193,7 +193,7 @@ body{
     font-weight: 500;
     margin-top: 12px;
 }
-.city-hide {
+.city-hide{
     display: none;
 }
 #clone-info-weather,
@@ -201,14 +201,12 @@ body{
 #clone-info-wind{
     position: absolute;
     transform: translateY(-100%);
-
 }
 #clone-info-weather .weather{
     transform: translateY(120%);
     transition: transform 1s ease, opacity 0s;
     transition-delay: 0s,2s;
 }
-
 .weather-box:not(.active) #clone-info-weather .weather{
     opacity: 0;
     transition-delay: 0s;
