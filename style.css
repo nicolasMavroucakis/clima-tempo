@@ -9,14 +9,16 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: ;
     background: url("images/background.jpg");
     background-size: cover;
     background-position: center;
 }
 .container{
+    margin-top: 50%;
     position: relative;
     width: 400px;
     height: 100px;
@@ -28,10 +30,33 @@ body{
     color: #fff;
     transition: height .6s ease;
 }
+.fiveDaysContainer{
+    position: relative;
+    gap: 5px;
+    justify-content: space-around;
+    display: flex;
+    background-color: transparent;
+    color: #fff;
+    width: 400px;
+    height: 150px;
+    margin-top: 16px;
+    transition: height .6s ease;
+    overflow: hidden;
+}
+.fiveDaysWeather{
+    text-align: center;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+}
+.fiveDaysWeather img{
+    width: 50%;
+}
 .search-box{
     position: relative;
     width: 100%;
-    height: 55px;
+    height: 60px;
     display: flex;
     align-items: center;
 }
@@ -79,15 +104,19 @@ body{
 }
 .weather-box,
 .weather-details,
-.not-found{
+.not-found
+{
     overflow: hidden;
     visibility: hidden;
 }
+
 .weather-box.active,
 .weather-details.active,
-.not-found.active{
+.not-found.active,
+.fiveDaysContainer.active{
     visibility: visible;
 }
+
 .weather-box .box,
 .not-found .box{
     transform: translateY(-100%);

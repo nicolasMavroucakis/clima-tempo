@@ -1,9 +1,10 @@
 const container = document.querySelector('.container')
 const search = document.querySelector('.search-box button')
 const weatherBox = document.querySelector('.weather-box')
-const weatherDetails =document.querySelector('.weather-details')
-const error404 =document.querySelector('.not-found')
-const cityHide =document.querySelector('.city-hide')
+const weatherDetails = document.querySelector('.weather-details')
+const fiveDaysContainer = document.querySelector('.fiveDaysContainer');
+const error404 = document.querySelector('.not-found')
+const cityHide = document.querySelector('.city-hide')
 
 search.addEventListener('click', () => {
 
@@ -21,6 +22,7 @@ search.addEventListener('click', () => {
             container.style.height = '400px'
             weatherBox.classList.remove('active')
             weatherDetails.classList.remove('active')
+            fiveDaysContainer.classList.remove('.active')
             error404.classList.add('active')
             return
         }
@@ -29,6 +31,7 @@ search.addEventListener('click', () => {
         container.classList.add('active')
         weatherBox.classList.add('active')
         weatherDetails.classList.add('active')
+        fiveDaysContainer.classList.add('.active')
         error404.classList.remove('active')
         
         setTimeout(() => {
