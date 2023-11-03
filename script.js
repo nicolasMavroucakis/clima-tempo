@@ -6,6 +6,15 @@ const fiveDaysContainer = document.querySelector('.fiveDaysContainer');
 const error404 = document.querySelector('.not-found')
 const cityHide = document.querySelector('.city-hide')
 
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
 search.addEventListener('click', () => {
 
     const APIKey = 'ef0b0973b783e0614ac87612ec04344b'//b8f0a349f865512798be0ab878c9d728

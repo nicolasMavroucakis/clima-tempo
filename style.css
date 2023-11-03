@@ -12,13 +12,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: ;
+    min-height: 100vh;
     background: url("images/background.jpg");
     background-size: cover;
     background-position: center;
 }
 .container{
-    margin-top: 50%;
+    margin-top: 10vh;
     position: relative;
     width: 400px;
     height: 100px;
@@ -38,7 +38,7 @@ body{
     background-color: transparent;
     color: #fff;
     width: 400px;
-    height: 150px;
+    height: 250px;
     margin-top: 16px;
     transition: height .6s ease;
     overflow: hidden;

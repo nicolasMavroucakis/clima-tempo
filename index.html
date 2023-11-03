@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheather</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
@@ -55,33 +56,39 @@
         </div>
     </div>
 </div>
-<div class="fiveDaysContainer">
-    <div class="fiveDaysWeather">
-        <p>0/0</p>
-        <img src="images/cloud.png">
-        <p>0<span>°C</span></p>
-    </div>
-    <div class="fiveDaysWeather">
-        <p>0/0</p>
-        <img src="images/cloud.png">
-        <p>0<span>°C</span></p>
-    </div>
-    <div class="fiveDaysWeather">
-        <p>0/0</p>
-        <img src="images/cloud.png">
-        <p>0<span>°C</span></p>
-    </div>
-    <div class="fiveDaysWeather">
-        <p>0/0</p>
-        <img src="images/cloud.png">
-        <p>0<span>°C</span></p>
-    </div>
-    <div class="fiveDaysWeather">
-        <p>0/0</p>
-        <img src="images/cloud.png">
-        <p>0<span>°C</span></p>
+<div class="fiveDaysContainer swiper">
+    <div class="slide-content">
+        <div class="swiper-wrapper">
+            <div class="fiveDaysWeather swiper-slide">
+                <p>0/0</p>
+                <img src="images/cloud.png">
+                <p>0<span>°C</span></p>
+            </div>
+            <div class="fiveDaysWeather swiper-slide">
+                <p>0/0</p>
+                <img src="images/cloud.png">
+                <p>0<span>°C</span></p>
+            </div>
+            <div class="fiveDaysWeather swiper-slide">
+                <p>0/0</p>
+                <img src="images/cloud.png ">
+                <p>0<span>°C</span></p>
+            </div>
+            <div class="fiveDaysWeather swiper-slide">
+                <p>0/0</p>
+                <img src="images/cloud.png">
+                <p>0<span>°C</span></p>
+            </div>
+            <div class="fiveDaysWeather swiper-slide">
+                <p>0/0</p>
+                <img src="images/cloud.png">
+                <p>0<span>°C</span></p>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 </div>
+<script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
