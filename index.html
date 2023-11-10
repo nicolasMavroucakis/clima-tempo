@@ -13,11 +13,19 @@
     
 <div class="container">
     <div class="search-box">
-        <i class="bx bxs-map"></i>
-        <input type="text" placeholder="enter your location">
+        <i class="bx bxs-map"></i> 
         <button class="bx bx-search"></button>
     </div>
-    <p class="city-hide">city hide</p>
+    <div class="search-box your-city">
+        <input type="text" placeholder="enter your city name">
+    </div>
+    <div class="search-box not-first-input your-state">
+        <input type="text" placeholder="enter your state code">
+    </div>
+    <div class="search-box not-first-input your-contry">
+        <input type="text" placeholder="enter your country code">
+    </div>
+    <p class="city-cord"></p>
     <div class="weather-box">
         <div class="box">
             <div class="info-weather">
@@ -62,27 +70,43 @@
             <div class="fiveDaysWeather swiper-slide">
                 <p class="date">0/0</p>
                 <img src="images/cloud.png">
-                <p>0<span>°C</span></p>
+                <div class="max_min_temp">
+                    <div class="max_temp"><p><span>Max temp </span>0<span>°C</span></p></div>
+                    <div class="min_temp"><p><span>Min temp </span>0<span>°C</span></p></div>
+                </div>
             </div>
             <div class="fiveDaysWeather swiper-slide">
                 <p class="date">0/0</p>
                 <img src="images/cloud.png">
-                <p>0<span>°C</span></p>
+                <div class="max_min_temp">
+                    <div class="max_temp"><p><span>Max temp </span>0<span>°C</span></p></div>
+                    <div class="min_temp"><p><span>Min temp </span>0<span>°C</span></p></div>
+                </div>
             </div>
             <div class="fiveDaysWeather swiper-slide">
                 <p class="date">0/0</p>
                 <img src="images/cloud.png ">
-                <p>0<span>°C</span></p>
+                <div class="max_min_temp">
+                    <div class="max_temp"><p><span>Max temp </span>0<span>°C</span></p></div>
+                    <div class="min_temp"><p><span>Min temp </span>0<span>°C</span></p></div>
+                </div>
+                
             </div>
             <div class="fiveDaysWeather swiper-slide">
                 <p class="date">0/0</p>
                 <img src="images/cloud.png">
-                <p>0<span>°C</span></p>
+                <div class="max_min_temp">
+                    <div class="max_temp"><p><span>Max temp </span>0<span>°C</span></p></div>
+                    <div class="min_temp"><p><span>Min temp </span>0<span>°C</span></p></div>
+                </div>
             </div>
             <div class="fiveDaysWeather swiper-slide">
                 <p class="date">0/0</p>
                 <img src="images/cloud.png">
-                <p>0<span>°C</span></p>
+                <div class="max_min_temp">
+                    <div class="max_temp"><p><span>Max temp </span>0<span>°C</span></p></div>
+                    <div class="min_temp"><p><span>Min temp </span>0<span>°C</span></p></div>
+                </div>
             </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -90,5 +114,6 @@
 </div>
 <script src="swiper-bundle.min.js"></script>
 <script src="script.js"></script>
+<script src="script_loc.js"></script>
 </body>
 </html>

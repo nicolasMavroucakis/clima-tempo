@@ -25,22 +25,22 @@ search.addEventListener('click', () => {
         return
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`).then(response => response.json()).then(json => {
-
+    console.log(json)
        if(json.cod == '404'){
             cityHide.textContent = city
             container.style.height = '400px'
             weatherBox.classList.remove('active')
             weatherDetails.classList.remove('active')
-            fiveDaysContainer.classList.remove('.active')
+            fiveDaysContainer.classList.remove('active')
             error404.classList.add('active')
             return
         }
 
-        container.style.height = '555px'
+        container.style.height = '700px'
         container.classList.add('active')
         weatherBox.classList.add('active')
         weatherDetails.classList.add('active')
-        fiveDaysContainer.classList.add('.active')
+        fiveDaysContainer.classList.add('active')
         error404.classList.remove('active')
         
         setTimeout(() => {
